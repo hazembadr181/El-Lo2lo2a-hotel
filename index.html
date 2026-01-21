@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new hotel</title>
+
+    
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+<!-- font-awesome -->
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<!-- main-css -->
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="index-page">
+
+      <header id="header" class="header sticky-top">
+
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="img/logo.png" alt="">
+          <!-- <h1 class="sitename">اللؤلؤة</h1> -->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="amenities.html">المرافق</a></li>
+            <li><a href="rooms.html">معرض الصور</a></li>
+            <li><a href="location.html">الموقع</a></li>
+
+            <li><a href="contact.html">التواصل</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+        <!-- Hotel Hero Section -->
+    <section id="hotel-hero" class="hotel-hero section dark-background">
+
+      <div class="image-background">
+        <div class="hero-image">
+        <img src="img/1.jpeg" alt="">
+
+
+        </div>
+        <!-- <video autoplay="" muted="" loop="">
+          <source src="assets/img/hotel/video-8.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+        <div class="image-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+              <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
+                <h1>إقامة راقية… حيث يلتقي الفخامة بالراحة</h1>
+                <p class="hero-subtitle">استمتع بتجربة فندقية استثنائية وخدمات مصممة لتلبي أعلى توقعاتك.</p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+                  <a href="#gallery-showcase" class="btn btn-outline">استكشف المكان</a>
+                  <a href="#contact-2" class="btn btn-primary">تواصل معنا</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row justify-content-center mt-5">
+            <div class="col-lg-10">
+              <div class="booking-card" data-aos="fade-up" data-aos-delay="300">
+                <form class="booking-form php-email-form" action="forms/reservation.php" method="post">
+                  <div class="row g-3">
+                    <div class="col-md-3">
+                      <label for="checkin" class="form-label">Check-in</label>
+                      <input type="date" class="form-control" id="checkin" name="checkin" required="">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="checkout" class="form-label">Check-out</label>
+                      <input type="date" class="form-control" id="checkout" name="checkout" required="">
+                    </div>
+                    <div class="col-md-2">
+                      <label for="guests" class="form-label">Guests</label>
+                      <select class="form-select" id="guests" name="guests" required="">
+                        <option value="">Select</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="rooms" class="form-label">Rooms</label>
+                      <select class="form-select" id="rooms" name="rooms" required="">
+                        <option value="">Select</option>
+                        <option value="1">1 Room</option>
+                        <option value="2">2 Rooms</option>
+                        <option value="3">3 Rooms</option>
+                        <option value="4">4+ Rooms</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <button type="submit" class="btn btn-search">
+                        <i class="bi bi-search"></i>
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="row justify-content-center mt-4">
+            <div class="col-lg-12">
+              <div class="hotel-highlights" data-aos="fade-up" data-aos-delay="400">
+                <div class="row text-center">
+                  <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                      <i class="bi bi-wifi"></i>
+                      <span>Free WiFi</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                      <i class="bi bi-p-circle"></i>
+                      <span>Free Parking</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                      <i class="bi bi-cup-hot"></i>
+                      <span>Room Service</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="highlight-item">
+                      <i class="bi bi-water"></i>
+                      <span>Swimming Pool</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Hotel Hero Section -->
+ 
+        <!-- About Home Section -->
+    <section id="about-home" class="about-home section">
+           <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>نبذة عنا</h2>
+        <p>لأن راحتك هي أولويتنا , عتني بالتفاصيل لنمنحك الأفضل</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="section-badge">
+                <i class="bi bi-gem"></i>
+                <span>ستايل فاخر</span>
+              </div>
+
+              <h2>حيث يلتقي الأناقة الخالدة بالراحة العصرية</h2>
+
+              <p>مرحبًا بكم في اللؤلؤة، وجهتكم المثالية للإقامة المريحة والهادئة.
+نحرص على تقديم تجربة فندقية مميزة تجمع بين الراحة، الأناقة، وحسن الضيافة، مع اهتمام بأدق التفاصيل لضمان رضا ضيوفنا.</p>
+
+              <div class="highlight-stats">
+                <div class="stat-item">
+                  <div class="stat-number">10+</div>
+                  <div class="stat-label">سنوات من التميز</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">50</div>
+                  <div class="stat-label">شقق فاخرة</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">5★</div>
+                  <div class="stat-label">تقييم</div>
+                </div>
+              </div>
+
+              <!-- <div class="amenities-list">
+                <div class="amenity-tag">
+                  <i class="bi bi-wifi"></i>
+                  <span>واي فاي مجاني</span>
+                </div>
+                <div class="amenity-tag">
+                  <i class="bi bi-car-front"></i>
+                  <span>خدمة صفّ السيارات</span>
+                </div>
+                <div class="amenity-tag">
+                  <i class="bi bi-water"></i>
+                  <span>حمام سباحة</span>
+                </div>
+                <div class="amenity-tag">
+                  <i class="bi bi-cup-hot"></i>
+                  <span>خدمة الغرف على مدار الساعة</span>
+                </div>
+              </div> -->
+<!-- 
+              <div class="cta-group">
+                <a href="rooms.html" class="btn-primary">
+                  <span>Explore Rooms</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="about.html" class="btn-outline">Learn More</a>
+              </div> -->
+            </div>
+          </div><!-- End Content -->
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="visual-section">
+              <div class="main-image-container">
+                <img src="assets/img/hotel/showcase-7.webp" alt="Hotel Lobby" class="main-image">
+                <div class="image-overlay-content">
+                  <!-- <div class="award-badge">
+                    <div class="award-icon">
+                      <i class="bi bi-trophy"></i>
+                    </div>
+                    <div class="award-text">
+                      <span class="award-title">Best Hotel</span>
+                      <span class="award-year">2024</span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- <div class="secondary-images">
+                <div class="secondary-image">
+                  <img src="assets/img/hotel/dining-4.webp" alt="Fine Dining" class="img-fluid">
+                </div>
+                <div class="secondary-image">
+                  <img src="assets/img/hotel/amenities-1.webp" alt="Spa Services" class="img-fluid">
+                </div>
+              </div> -->
+
+              <div class="floating-experience">
+                <div class="experience-content">
+                  <h4>تجربة استثنائية</h4>
+                  <p>خدمة شخصية مصممة خصيصًا لتلبية جميع احتياجاتك</p>
+                  <!-- <div class="rating-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Visual Section -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Home Section -->
+
+      <!-- Gallery Showcase Section -->
+    <section id="gallery-showcase" class="gallery-showcase section">
+        <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>معرض الصور</h2>
+        <p>اكتشف جمال الفندق , عيش التجربة قبل الوصول</p>
+      </div><!-- End Section Title -->
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+            <div class="featured-gallery">
+              <div class="main-gallery-item">
+                <img src="img/1.jpeg" alt="Premium Hotel Experience" class="img-fluid" loading="lazy">
+                <a href="img/1.jpeg" class="gallery-lightbox glightbox">
+                  <!-- <div class="lightbox-icon">
+                    <i class="bi bi-zoom-in"></i>
+                  </div> -->
+                </a>
+                <div class="gallery-info">
+                  <h4>فخامة استثنائية</h4>
+                  <p>استمتع بأناقة لا مثيل لها في مرافقنا الفاخرة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="300">
+            <div class="gallery-grid">
+              <div class="gallery-grid-item">
+                <img src="img/2.jpeg" alt="Executive Suite" class="img-fluid" loading="lazy">
+                <a href="img/2.jpeg" class="grid-overlay glightbox">
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+              </div>
+              <div class="gallery-grid-item">
+                <img src="img/3.jpeg" alt="Wellness Center" class="img-fluid" loading="lazy">
+                <a href="img/3.jpeg" class="grid-overlay glightbox">
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+              </div>
+              <div class="gallery-grid-item">
+                <img src="img/4.jpeg" alt="Fine Dining" class="img-fluid" loading="lazy">
+                <a href="img/4.jpeg" class="grid-overlay glightbox">
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+              </div>
+              <div class="gallery-grid-item">
+                <img src="img/5.jpeg" alt="Scenic Views" class="img-fluid" loading="lazy">
+                <a href="img/5.jpeg" class="grid-overlay glightbox">
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-thumbnails" data-aos="fade-up" data-aos-delay="400">
+          <div class="thumbnail-gallery swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 400,
+                "autoplay": {
+                  "delay": 4000,
+                  "reverseDirection": true
+                },
+                "slidesPerView": 3,
+                "spaceBetween": 15,
+                "centeredSlides": false,
+                "breakpoints": {
+                  "576": {
+                    "slidesPerView": 4
+                  },
+                  "768": {
+                    "slidesPerView": 6
+                  },
+                  "992": {
+                    "slidesPerView": 8
+                  },
+                  "1200": {
+                    "slidesPerView": 10
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/6.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/6.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/7.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/7.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/8.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/8.jpeg"class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/9.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/9.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/10.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/10.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/11.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/11.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/12.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/12.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/13.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/13.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/14.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/14.jpeg"class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="thumbnail-item">
+                  <img src="img/15.jpeg" alt="Hotel Gallery" class="img-fluid" loading="lazy">
+                  <a href="img/15.jpeg" class="thumbnail-link glightbox"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="gallery-actions text-center" data-aos="zoom-in" data-aos-delay="500">
+          <div class="action-buttons">
+            <a href="gallery.html" class="btn-primary-gallery">
+              <i class="bi bi-images me-2"></i>Complete Gallery
+            </a>
+            <a href="virtual-tour.html" class="btn-secondary-gallery">
+              <i class="bi bi-camera-video me-2"></i>Virtual Tour
+            </a>
+          </div>
+        </div> -->
+
+      </div>
+
+    </section><!-- /Gallery Showcase Section -->
+
+     <!-- Amenities Cards Section -->
+    <!-- <section id="amenities-cards" class="amenities-cards section dark-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>المرافق</h2>
+        <p>مرافق مصممة لراحتك , كل ما تحتاجه لإقامة مثالية</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="amenity-card">
+              <div class="amenity-icon">
+                <i class="bi bi-water"></i>
+              </div>
+              <div class="amenity-content">
+                <h4>حمام السباحة</h4>
+                <p>استمتع بأجواء من الاسترخاء والانتعاش في حمام السباحة المصمم بعناية لراحتك</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="amenity-card">
+              <div class="amenity-icon">
+                <i class="bi bi-alarm"></i>
+              </div>
+              <div class="amenity-content">
+                <h4>خدمة الغرف</h4>
+                <p>اطلب وجبتك أو مشروبك المفضل في أي وقت وأنت في غرفتك</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="amenity-card">
+              <div class="amenity-icon">
+                <i class="bi bi-cup-hot"></i>
+              </div>
+              <div class="amenity-content">
+                <h4>مطعم &amp; كافيه</h4>
+                <p>استمتع بتجربة طعام مميزة , مع تشكيلة مميزة من المشروبات الساخنة والباردة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="amenity-card">
+              <div class="amenity-icon">
+                <i class="bi bi-bicycle"></i>
+              </div>
+              <div class="amenity-content">
+                <h4>مركز لياقة بدنية متكامل</h4>
+                <p>مارس  نشاطك اليومي مع أجهزة رياضية حديثة تناسب جميع المستويات.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="amenity-card">
+              <div class="amenity-icon">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <div class="amenity-content">
+                <h4>قاعات اجتماعات</h4>
+                <p>مساحات مجهزة لعقد الاجتماعات والمناسبات بأحدث التقنيات</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="amenity-card">
+              <div class="amenity-icon">
+                <i class="bi bi-car-front"></i>
+              </div>
+              <div class="amenity-content">
+                <h4>مواقف سيارات</h4>
+                <p>مواقف مريحة ومؤمنة لضمان راحة بالك طوال فترة إقامتك</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section> -->
+    <!-- /Amenities Cards Section -->
+        <!-- Contact 2 Section -->
+    <section id="contact-2" class="contact-2 section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>تواصل معنا </h2>
+        <p>نحن في خدمتك دائمًا , نحن في خدمتك دائمًا</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 align-items-stretch">
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="info-panel">
+              <div class="panel-header">
+                <span class="section-badge">
+                  <i class="bi bi-chat-dots-fill"></i>
+                  تواصل معنا
+                </span>
+                <h3>دعنا نحول رؤيتك إلى واقع</h3>
+                <p>راحتك تهمنا… تواصل معنا</p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-whatsapp"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">واتساب فقط</span>
+                    <a href="https://wa.me/966127444644">0127444644</a>
+                  </div>
+                </div>
+
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">تواصل معنا</span>
+                    <a href="tel:+15558901234">0555071928</a>
+                  </div>
+                </div>
+
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-pin-map-fill"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">موقعنا</span>
+                    <span>طريق الملك خالد، الربيع، الطائف ، المملكة العربية السعودية</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="stats-strip">
+                <div class="stat-item">
+                  <span class="stat-number">98%</span>
+                  <span class="stat-text">Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-text">Support</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">3.2k</span>
+                  <span class="stat-text">Projects</span>
+                </div>
+              </div> -->
+
+              <!-- <div class="social-connect">
+                <span>Follow Us</span>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div><!-- End Info Panel -->
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div><!-- End Form Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact 2 Section -->
+
+      <footer id="footer" class="footer position-relative light-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="img/logo.png" alt="">
+              <span class="sitename">اللؤلؤة</span>
+            </a>
+            <div class="footer-contact ">
+              <p>مرحبًا بكم في اللؤلؤة، وجهتكم المثالية للإقامة المريحة والهادئة. نحرص على تقديم تجربة فندقية مميزة تجمع بين الراحة، الأناقة، وحسن الضيافة،</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <!-- <li><a href="#">الرئيسية</a></li> -->
+              <li><a href="#">نبذة عنا</a></li>
+              <li><a href="#">معرض الصور</a></li>
+              <li><a href="#">التواصل</a></li>
+              <!-- <li><a href="#">التواصل</a></li> -->
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-4 col-md-3 footer-links">
+            <h4>للتواصل معنا </h4>
+            <div class="loc">
+              <p> <i class="bi bi-geo-alt"></i>طريق الملك خالد،الربيع،الطائف،المملكة العربية السعودية</p>
+              <p> <i class="bi bi-telephone"></i>0555071928</p>
+              <p>
+                <i class="bi bi-whatsapp"></i> 0127444644
+              </p>
+            </div>
+            <!-- <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul> -->
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>موقعنا</h4>
+         
+        <img src="img/الموقع.jpeg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="copyright text-center">
+      <div class="container">
+
+        <div class="d-flex flex-column align-items-center">
+          <div>
+            © Copyright <strong><span>hotels team</span></strong>. All Rights Reserved
+          </div>
+
+        </div>
+
+
+      </div>
+    </div> -->
+
+  </footer>
+
+
+
+
+  </main>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
